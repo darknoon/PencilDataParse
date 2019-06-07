@@ -1,13 +1,6 @@
-//
-//  SceneDelegate.swift
-//  PencilDataParse
-//
-//  Created by Andrew Pouliot on 6/7/19.
-//  Copyright © 2019 Darknoon. All rights reserved.
-//
-
 import UIKit
 import SwiftUI
+import PencilKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -23,6 +16,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     let window = UIWindow(frame: UIScreen.main.bounds)
     window.rootViewController = UIHostingController(rootView: ContentView())
     self.window = window
+
+    let responder = window
+    PKToolPicker.shared(for: window)?.setVisible(true, forFirstResponder: responder)
+
     window.makeKeyAndVisible()
   }
 

@@ -14,6 +14,13 @@
 		4936842622AAABCF009641C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4936842522AAABCF009641C1 /* Preview Assets.xcassets */; };
 		4936842922AAABCF009641C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4936842722AAABCF009641C1 /* LaunchScreen.storyboard */; };
 		4936843422AAABCF009641C1 /* PencilDataParseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4936843322AAABCF009641C1 /* PencilDataParseTests.swift */; };
+		4936844122AAF3A4009641C1 /* PencilData.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4936844022AAF3A4009641C1 /* PencilData.pb.swift */; };
+		4936845B22AAF431009641C1 /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4936845122AAF418009641C1 /* SwiftProtobuf.framework */; };
+		4936845C22AAF431009641C1 /* SwiftProtobuf.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4936845122AAF418009641C1 /* SwiftProtobuf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		494354D422AB1F2B006B1EE7 /* DidMountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494354D322AB1F2B006B1EE7 /* DidMountView.swift */; };
+		49EC5E4622AAFFB50071B3DC /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC5E4522AAFFB50071B3DC /* Utils.swift */; };
+		49EC5E4F22AB04C60071B3DC /* DrawingInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC5E4E22AB04C60071B3DC /* DrawingInfoView.swift */; };
+		49EC5E5222AB04F50071B3DC /* PencilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC5E5122AB04F50071B3DC /* PencilView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +31,70 @@
 			remoteGlobalIDString = 4936841822AAABCD009641C1;
 			remoteInfo = PencilDataParse;
 		};
+		4936844C22AAF418009641C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4936844222AAF417009641C1 /* SwiftProtobuf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "_____Product_Protobuf_macOS";
+			remoteInfo = SwiftProtobuf_macOS;
+		};
+		4936844E22AAF418009641C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4936844222AAF417009641C1 /* SwiftProtobuf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "_____Product_ProtobufTestSuite_macOS";
+			remoteInfo = SwiftProtobufTestSuite_macOS;
+		};
+		4936845022AAF418009641C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4936844222AAF417009641C1 /* SwiftProtobuf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "_____Product_Protobuf_iOS";
+			remoteInfo = SwiftProtobuf_iOS;
+		};
+		4936845222AAF418009641C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4936844222AAF417009641C1 /* SwiftProtobuf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "_____Product_ProtobufTestSuite_iOS";
+			remoteInfo = SwiftProtobufTestSuite_iOS;
+		};
+		4936845422AAF418009641C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4936844222AAF417009641C1 /* SwiftProtobuf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F44F936F1DAEA53900BC5B85;
+			remoteInfo = SwiftProtobuf_tvOS;
+		};
+		4936845622AAF418009641C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4936844222AAF417009641C1 /* SwiftProtobuf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F44F939F1DAEA7C500BC5B85;
+			remoteInfo = SwiftProtobufTestSuite_tvOS;
+		};
+		4936845822AAF418009641C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4936844222AAF417009641C1 /* SwiftProtobuf.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F44F93FE1DAEB13F00BC5B85;
+			remoteInfo = SwiftProtobuf_watchOS;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4936845D22AAF432009641C1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4936845C22AAF431009641C1 /* SwiftProtobuf.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4936841922AAABCD009641C1 /* PencilDataParse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PencilDataParse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +108,13 @@
 		4936842F22AAABCF009641C1 /* PencilDataParseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PencilDataParseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4936843322AAABCF009641C1 /* PencilDataParseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PencilDataParseTests.swift; sourceTree = "<group>"; };
 		4936843522AAABCF009641C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4936843E22AAF121009641C1 /* PencilData.proto */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.protobuf; path = PencilData.proto; sourceTree = "<group>"; };
+		4936844022AAF3A4009641C1 /* PencilData.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PencilData.pb.swift; sourceTree = "<group>"; };
+		4936844222AAF417009641C1 /* SwiftProtobuf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftProtobuf.xcodeproj; path = "swift-protobuf/SwiftProtobuf.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		494354D322AB1F2B006B1EE7 /* DidMountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DidMountView.swift; sourceTree = "<group>"; };
+		49EC5E4522AAFFB50071B3DC /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		49EC5E4E22AB04C60071B3DC /* DrawingInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingInfoView.swift; sourceTree = "<group>"; };
+		49EC5E5122AB04F50071B3DC /* PencilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PencilView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4936845B22AAF431009641C1 /* SwiftProtobuf.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +142,7 @@
 				4936841B22AAABCD009641C1 /* PencilDataParse */,
 				4936843222AAABCF009641C1 /* PencilDataParseTests */,
 				4936841A22AAABCD009641C1 /* Products */,
+				4936845A22AAF431009641C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +160,14 @@
 			children = (
 				4936841C22AAABCD009641C1 /* AppDelegate.swift */,
 				4936841E22AAABCD009641C1 /* SceneDelegate.swift */,
-				4936842022AAABCD009641C1 /* ContentView.swift */,
+				49EC5E5022AB04CE0071B3DC /* Views */,
+				49EC5E4522AAFFB50071B3DC /* Utils.swift */,
+				4936843E22AAF121009641C1 /* PencilData.proto */,
+				4936844022AAF3A4009641C1 /* PencilData.pb.swift */,
 				4936842222AAABCF009641C1 /* Assets.xcassets */,
 				4936842722AAABCF009641C1 /* LaunchScreen.storyboard */,
 				4936842A22AAABCF009641C1 /* Info.plist */,
+				4936844222AAF417009641C1 /* SwiftProtobuf.xcodeproj */,
 				4936842422AAABCF009641C1 /* Preview Content */,
 			);
 			path = PencilDataParse;
@@ -107,6 +190,38 @@
 			path = PencilDataParseTests;
 			sourceTree = "<group>";
 		};
+		4936844322AAF417009641C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4936844D22AAF418009641C1 /* SwiftProtobuf.framework */,
+				4936844F22AAF418009641C1 /* SwiftProtobufTests.xctest */,
+				4936845122AAF418009641C1 /* SwiftProtobuf.framework */,
+				4936845322AAF418009641C1 /* SwiftProtobufTests.xctest */,
+				4936845522AAF418009641C1 /* SwiftProtobuf.framework */,
+				4936845722AAF418009641C1 /* SwiftProtobufTests.xctest */,
+				4936845922AAF418009641C1 /* SwiftProtobuf.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4936845A22AAF431009641C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49EC5E5022AB04CE0071B3DC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4936842022AAABCD009641C1 /* ContentView.swift */,
+				49EC5E4E22AB04C60071B3DC /* DrawingInfoView.swift */,
+				49EC5E5122AB04F50071B3DC /* PencilView.swift */,
+				494354D322AB1F2B006B1EE7 /* DidMountView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,6 +232,7 @@
 				4936841522AAABCD009641C1 /* Sources */,
 				4936841622AAABCD009641C1 /* Frameworks */,
 				4936841722AAABCD009641C1 /* Resources */,
+				4936845D22AAF432009641C1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,6 +291,12 @@
 			mainGroup = 4936841022AAABCD009641C1;
 			productRefGroup = 4936841A22AAABCD009641C1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4936844322AAF417009641C1 /* Products */;
+					ProjectRef = 4936844222AAF417009641C1 /* SwiftProtobuf.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4936841822AAABCD009641C1 /* PencilDataParse */,
@@ -182,6 +304,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4936844D22AAF418009641C1 /* SwiftProtobuf.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftProtobuf.framework;
+			remoteRef = 4936844C22AAF418009641C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4936844F22AAF418009641C1 /* SwiftProtobufTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftProtobufTests.xctest;
+			remoteRef = 4936844E22AAF418009641C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4936845122AAF418009641C1 /* SwiftProtobuf.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftProtobuf.framework;
+			remoteRef = 4936845022AAF418009641C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4936845322AAF418009641C1 /* SwiftProtobufTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftProtobufTests.xctest;
+			remoteRef = 4936845222AAF418009641C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4936845522AAF418009641C1 /* SwiftProtobuf.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftProtobuf.framework;
+			remoteRef = 4936845422AAF418009641C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4936845722AAF418009641C1 /* SwiftProtobufTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftProtobufTests.xctest;
+			remoteRef = 4936845622AAF418009641C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4936845922AAF418009641C1 /* SwiftProtobuf.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftProtobuf.framework;
+			remoteRef = 4936845822AAF418009641C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4936841722AAABCD009641C1 /* Resources */ = {
@@ -208,9 +382,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49EC5E4622AAFFB50071B3DC /* Utils.swift in Sources */,
+				49EC5E4F22AB04C60071B3DC /* DrawingInfoView.swift in Sources */,
 				4936841D22AAABCD009641C1 /* AppDelegate.swift in Sources */,
 				4936841F22AAABCD009641C1 /* SceneDelegate.swift in Sources */,
+				494354D422AB1F2B006B1EE7 /* DidMountView.swift in Sources */,
+				49EC5E5222AB04F50071B3DC /* PencilView.swift in Sources */,
 				4936842122AAABCD009641C1 /* ContentView.swift in Sources */,
+				4936844122AAF3A4009641C1 /* PencilData.pb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
