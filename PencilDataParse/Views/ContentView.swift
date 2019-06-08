@@ -9,9 +9,7 @@ struct ContentView : View {
   var body: some View {
     HStack {
       PencilView(model: model)
-      DrawingInfoView(drawing: model.drawing).onAppear(perform: {
-        print("Did appear!")
-      })
+      DrawingInfoView(model: model)
     }
   }
 }

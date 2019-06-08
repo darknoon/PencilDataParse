@@ -17,7 +17,8 @@
 		4936844122AAF3A4009641C1 /* PencilData.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4936844022AAF3A4009641C1 /* PencilData.pb.swift */; };
 		4936845B22AAF431009641C1 /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4936845122AAF418009641C1 /* SwiftProtobuf.framework */; };
 		4936845C22AAF431009641C1 /* SwiftProtobuf.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4936845122AAF418009641C1 /* SwiftProtobuf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		494354D422AB1F2B006B1EE7 /* DidMountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494354D322AB1F2B006B1EE7 /* DidMountView.swift */; };
+		4986C98822AB5C9B00A7E393 /* DrawingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4986C98722AB5C9B00A7E393 /* DrawingModel.swift */; };
+		49CF70C622AC27570088CD3B /* FilePresenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CF70C522AC27570088CD3B /* FilePresenterView.swift */; };
 		49EC5E4622AAFFB50071B3DC /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC5E4522AAFFB50071B3DC /* Utils.swift */; };
 		49EC5E4F22AB04C60071B3DC /* DrawingInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC5E4E22AB04C60071B3DC /* DrawingInfoView.swift */; };
 		49EC5E5222AB04F50071B3DC /* PencilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EC5E5122AB04F50071B3DC /* PencilView.swift */; };
@@ -111,7 +112,8 @@
 		4936843E22AAF121009641C1 /* PencilData.proto */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.protobuf; path = PencilData.proto; sourceTree = "<group>"; };
 		4936844022AAF3A4009641C1 /* PencilData.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PencilData.pb.swift; sourceTree = "<group>"; };
 		4936844222AAF417009641C1 /* SwiftProtobuf.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftProtobuf.xcodeproj; path = "swift-protobuf/SwiftProtobuf.xcodeproj"; sourceTree = SOURCE_ROOT; };
-		494354D322AB1F2B006B1EE7 /* DidMountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DidMountView.swift; sourceTree = "<group>"; };
+		4986C98722AB5C9B00A7E393 /* DrawingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingModel.swift; sourceTree = "<group>"; };
+		49CF70C522AC27570088CD3B /* FilePresenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePresenterView.swift; sourceTree = "<group>"; };
 		49EC5E4522AAFFB50071B3DC /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		49EC5E4E22AB04C60071B3DC /* DrawingInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingInfoView.swift; sourceTree = "<group>"; };
 		49EC5E5122AB04F50071B3DC /* PencilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PencilView.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			children = (
 				4936841C22AAABCD009641C1 /* AppDelegate.swift */,
 				4936841E22AAABCD009641C1 /* SceneDelegate.swift */,
+				4986C97F22AB5C5600A7E393 /* Models */,
 				49EC5E5022AB04CE0071B3DC /* Views */,
 				49EC5E4522AAFFB50071B3DC /* Utils.swift */,
 				4936843E22AAF121009641C1 /* PencilData.proto */,
@@ -211,13 +214,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4986C97F22AB5C5600A7E393 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4986C98722AB5C9B00A7E393 /* DrawingModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		49EC5E5022AB04CE0071B3DC /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				4936842022AAABCD009641C1 /* ContentView.swift */,
 				49EC5E4E22AB04C60071B3DC /* DrawingInfoView.swift */,
 				49EC5E5122AB04F50071B3DC /* PencilView.swift */,
-				494354D322AB1F2B006B1EE7 /* DidMountView.swift */,
+				49CF70C522AC27570088CD3B /* FilePresenterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -383,11 +394,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				49EC5E4622AAFFB50071B3DC /* Utils.swift in Sources */,
+				4986C98822AB5C9B00A7E393 /* DrawingModel.swift in Sources */,
 				49EC5E4F22AB04C60071B3DC /* DrawingInfoView.swift in Sources */,
 				4936841D22AAABCD009641C1 /* AppDelegate.swift in Sources */,
 				4936841F22AAABCD009641C1 /* SceneDelegate.swift in Sources */,
-				494354D422AB1F2B006B1EE7 /* DidMountView.swift in Sources */,
 				49EC5E5222AB04F50071B3DC /* PencilView.swift in Sources */,
+				49CF70C622AC27570088CD3B /* FilePresenterView.swift in Sources */,
 				4936842122AAABCD009641C1 /* ContentView.swift in Sources */,
 				4936844122AAF3A4009641C1 /* PencilData.pb.swift in Sources */,
 			);
